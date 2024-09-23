@@ -9,7 +9,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
 
 
 function loginUser(email, password) {
-    fetch('https://alumni-vm3x.onrender.com/login', {
+    fetch('https://alumn1.onrender.com/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -19,7 +19,8 @@ function loginUser(email, password) {
         password: password
       })
     })
-    .then(response => response.json()) 
+    .then(response => {
+      response.json()) 
     .then(data => {
       if (data.success) {
         
