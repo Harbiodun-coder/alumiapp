@@ -9,7 +9,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
 
 
 function loginUser(email, password) {
-    fetch('apiUrl', {
+    fetch('https://alumni-vm3x.onrender.com/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

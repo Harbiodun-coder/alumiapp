@@ -37,7 +37,7 @@
 
   
   function signupUser(email, password) {
-    fetch('apiUrl', {
+    fetch('https://alumni-vm3x.onrender.com/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
